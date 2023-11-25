@@ -6,7 +6,7 @@ import { provideHttpClient, withFetch } from '@angular/common/http';
 const serverConfig: ApplicationConfig = {
   providers: [
     provideServerRendering(),
-    // provideHttpClient(withFetch())  //to not fetch api from client side
+    provideHttpClient(withFetch())  //to not fetch api from client side
   ]
 };
 
